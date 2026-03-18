@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicias Trailer | Cofiadulces</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="hero" id="inicio">
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">
+        <img src="assets/images/logo.png" alt="Cofiadulces Logo" />
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#historia">Nuestra Historia</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hecho con amor &amp; tradición</p>
+      <h1>Sabores que <em>enamoran</em></h1>
+      <p class="hero-sub">Obleas artesanales, fresas con crema y delicias de sal<br>directas al corazón.</p>
+      <a href="#menu" class="btn-primary">Ver el menú</a>
+    </div>
+
+    <div class="hero-scroll">
+      <span></span>
+    </div>
+  </header>
+
+  <!-- ========== FRANJA DESTAQUE ========== -->
+  <section class="marquee-strip">
+    <div class="marquee-track">
+      <span>Obleas Artesanales</span><span class="dot">&#8226;</span>
+      <span>Fresas con Crema</span><span class="dot">&#8226;</span>
+      <span>Carnes &amp; Sal</span><span class="dot">&#8226;</span>
+      <span>Dulces de Fruta</span><span class="dot">&#8226;</span>
+      <span>Hecho con Amor</span><span class="dot">&#8226;</span>
+      <span>Obleas Artesanales</span><span class="dot">&#8226;</span>
+      <span>Fresas con Crema</span><span class="dot">&#8226;</span>
+      <span>Carnes &amp; Sal</span><span class="dot">&#8226;</span>
+      <span>Dulces de Fruta</span><span class="dot">&#8226;</span>
+      <span>Hecho con Amor</span><span class="dot">&#8226;</span>
+    </div>
+  </section>
+
+  <!-- ========== HISTORIA / FUNDADORA ========== -->
+  <section class="historia" id="historia">
+    <div class="container historia-grid">
+      <div class="historia-img">
+        <img src="assets/images/fundadora.jpg" alt="Fundadora de Cofiadulces" class="founder-photo" />
+      </div>
+      <div class="historia-text">
+        <p class="section-eyebrow">Nuestra Historia</p>
+        <h2>Un sueño hecho <em>sabor</em></h2>
+        <p>
+          Todo comenzó con una receta familiar, mucho cariño y el deseo de compartir
+          esos sabores únicos que solo la tradición puede ofrecer. Nuestra fundadora
+          decidió llevar esa magia a las calles, creando un espacio donde cada bocado
+          cuenta una historia.
+        </p>
+        <p>
+          Desde el primer día, la misión ha sido clara: ingredientes frescos,
+          preparación artesanal y una sonrisa en cada entrega.
+        </p>
+        <a href="#contacto" class="btn-secondary">Visítanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENÚ ========== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <p class="section-eyebrow center">Lo que ofrecemos</p>
+      <h2 class="center">Nuestro <em>Menú</em></h2>
+
+      <!-- Tabs de categorías -->
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-cat="dulces">Dulces</button>
+        <button class="tab-btn" data-cat="fresas">Fresas &amp; Crema</button>
+        <button class="tab-btn" data-cat="sal">Sabores de Sal</button>
+      </div>
+
+      <!-- Categoría: Dulces -->
+      <div class="menu-grid active" data-cat="dulces">
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/obleas.jpg" alt="Obleas Clásicas" />
+          <div class="card-body">
+            <h3>Obleas Clásicas</h3>
+            <p>Rellenas con arequipe, bocadillo y queso. La favorita de siempre.</p>
+            <span class="price">$3.500</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/obleaConFrutas.jpg" alt="Oblea con Frutas" />
+          <div class="card-body">
+            <h3>Oblea con Frutas</h3>
+            <p>Dulces de fruta artesanales sobre oblea crujiente.</p>
+            <span class="price">$4.000</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/BrevasConFruta.png" alt="Brevas con Fruta" />
+          <div class="card-body">
+            <h3>Brevas con Fruta</h3>
+            <p>Brevas en dulce acompañadas de frutas frescas de temporada.</p>
+            <span class="price">$4.500</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/caperuzaDeDulces.jpg" alt="Caperu za de Dulces" />
+          <div class="card-body">
+            <h3>Caperu za de Dulces</h3>
+            <p>Una selección especial de dulces artesanales presentados con elegancia.</p>
+            <span class="price">$5.000</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/chilacuanConQueso.png" alt="Chilacuán con Queso" />
+          <div class="card-body">
+            <h3>Chilacuán con Queso</h3>
+            <p>Dulce de chilacuán casero con queso fresco. Sabor de tradición.</p>
+            <span class="price">$4.000</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/cuajadaConDulces.png" alt="Cuajada con Dulces" />
+          <div class="card-body">
+            <h3>Cuajada con Dulces</h3>
+            <p>Cuajada fresca acompañada de dulces de fruta artesanales.</p>
+            <span class="price">$5.000</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/bandejaDeDulces.png" alt="Bandeja de Dulces" />
+          <div class="card-body">
+            <h3>Bandeja de Dulces</h3>
+            <p>Surtido variado de nuestros mejores dulces. Ideal para compartir.</p>
+            <span class="price">$12.000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoría: Fresas -->
+      <div class="menu-grid" data-cat="fresas">
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/fresasConCrema.png" alt="Fresas con Crema" />
+          <div class="card-body">
+            <h3>Fresas con Crema</h3>
+            <p>Fresas frescas, crema batida y un toque de azúcar. Clásico irresistible.</p>
+            <span class="price">$5.000</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/fresasConchips.png" alt="Fresas con Chips" />
+          <div class="card-body">
+            <h3>Fresas con Chips</h3>
+            <p>Fresas con crema y chips de chocolate para un toque crujiente.</p>
+            <span class="price">$6.000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoría: Sal -->
+      <div class="menu-grid" data-cat="sal">
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/chorizoArtesanal.jpg" alt="Chorizo Artesanal" />
+          <div class="card-body">
+            <h3>Chorizo Artesanal</h3>
+            <p>Chorizo con papa criolla y ají casero. Sabor auténtico de campo.</p>
+            <span class="price">$8.000</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/chorizoDelCampo.jpg" alt="Chorizo del Campo" />
+          <div class="card-body">
+            <h3>Chorizo del Campo</h3>
+            <p>Preparado con receta tradicional y asado al momento.</p>
+            <span class="price">$9.000</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="card-img" src="assets/images/costillasCerdo.jpg" alt="Costillas de Cerdo" />
+          <div class="card-body">
+            <h3>Costillas de Cerdo</h3>
+            <p>Costillas a la brasa con acompañamientos tradicionales.</p>
+            <span class="price">$18.000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALERÍA ========== -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <p class="section-eyebrow center">Una probadita visual</p>
+      <h2 class="center">Nuestra <em>Galería</em></h2>
+    </div>
+    <div class="galeria-grid">
+      <div class="gal-item tall">
+        <img src="assets/images/bandejaDeDulces.png" alt="Bandeja de dulces artesanales" />
+      </div>
+      <div class="gal-item">
+        <img src="assets/images/fresasConCrema.png" alt="Fresas con crema" />
+      </div>
+      <div class="gal-item">
+        <img src="assets/images/obleas.jpg" alt="Obleas clásicas" />
+      </div>
+      <div class="gal-item wide">
+        <img src="assets/images/costillasCerdo.jpg" alt="Costillas de cerdo" />
+      </div>
+      <div class="gal-item">
+        <img src="assets/images/caperuzaDeDulces.jpg" alt="Caperu za de dulces" />
+      </div>
+      <div class="gal-item">
+        <img src="assets/images/IMG_8296 (1).jpg" alt="Delicias Cofiadulces" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="contacto" id="contacto">
+    <div class="container contacto-grid">
+      <div class="contacto-info">
+        <p class="section-eyebrow">Encuéntranos</p>
+        <h2>Visítanos o <em>escríbenos</em></h2>
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Tu ciudad, Colombia</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>+57 300 000 0000</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>correo@cofiadulces.com</span>
+          </li>
+        </ul>
+
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="#" class="social-btn instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            Instagram
+          </a>
+          <a href="#" class="social-btn facebook" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+
+      <div class="contacto-form">
+        <h3>Envíanos un mensaje</h3>
+        <form>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu nombre" />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="tu@correo.com" />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="5" placeholder="¿Tienes un pedido especial o alguna pregunta?"></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Cofiadulces" class="footer-logo" />
+        <p>Sabores artesanales con amor,<br>hechos para compartir.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>+57 300 000 0000</p>
+        <p>correo@cofiadulces.com</p>
+        <p>Tu ciudad, Colombia</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Delicias Trailer | Cofiadulces. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
