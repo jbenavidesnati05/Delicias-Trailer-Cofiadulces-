@@ -586,6 +586,14 @@ h2 em { font-style: italic; color: var(--rose); }
 .footer-nav a:hover { color: var(--rose-light); }
 .footer-contact p { font-size: 0.88rem; margin-bottom: 0.3rem; }
 
+/* Mapa */
+.mapa-wrapper {
+  margin-top: 3rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.1);
   text-align: center;
