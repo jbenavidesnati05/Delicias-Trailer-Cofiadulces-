@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>QR Cofiadulces NATI</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #f5f0eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px 50px;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+      max-width: 380px;
+      width: 100%;
+    }
+
+    .logo {
+      width: 130px;
+      height: auto;
+      margin-bottom: 12px;
+    }
+
+    .business-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: #3b2a1a;
+      margin-bottom: 4px;
+    }
+
+    .tagline {
+      font-size: 0.85rem;
+      color: #9b7b5a;
+      margin-bottom: 28px;
+      letter-spacing: 0.04em;
+    }
+
+    #qrcode {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    #qrcode canvas,
+    #qrcode img {
+      border-radius: 12px;
+      border: 6px solid #fdf6ef;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .scan-text {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #3b2a1a;
+      margin-bottom: 6px;
+    }
+
+    .url {
+      font-size: 0.72rem;
+      color: #9b7b5a;
+      word-break: break-all;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px dashed #e0d4c8;
+      margin: 20px 0;
+    }
+
+    .contact {
+      font-size: 0.82rem;
+      color: #7a6050;
+      line-height: 1.8;
+    }
+
+    .contact strong {
+      color: #3b2a1a;
+    }
+
+    .btn-download {
+      margin-top: 24px;
+      display: inline-block;
+      background: #3b2a1a;
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.05em;
+      transition: background 0.2s;
+    }
+    .btn-download:hover { background: #c07c3a; }
+
+    @media print {
+      body { background: white; }
+      .card { box-shadow: none; border: 1px solid #ddd; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="assets/images/logo.png" alt="Cofiadulces NATI" class="logo" />
+    <h1 class="business-name">Cofiadulces NATI</h1>
+    <p class="tagline">Tu antojo, nuestra especialidad</p>
+
+    <div id="qrcode"></div>
+
+    <p class="scan-text">Escanea y ve nuestro menú</p>
+
+    <hr class="divider" />
+
+    <div class="contact">
+      <strong>Sibundoy, Putumayo — Colombia</strong><br>
+      320 7196041 &nbsp;·&nbsp; 7am – 7pm todos los días
+    </div>
+
+    <button class="btn-download no-print" onclick="descargarImagen()">
+      Descargar imagen
+    </button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: "https://jbenavidesnati05.github.io/Delicias-Trailer-Cofiadulces-/",
+      width: 220,
+      height: 220,
+      colorDark: "#3b2a1a",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+
+    function descargarImagen() {
+      const card = document.querySelector('.card');
+      html2canvas(card, { scale: 4, useCORS: true, backgroundColor: '#ffffff' }).then(canvas => {
+        const link = document.createElement('a');
+        link.download = 'QR-Cofiadulces-NATI.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      });
+    }
+  </script>
+
+</body>
+</html>
